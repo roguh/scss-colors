@@ -24,16 +24,20 @@ describe('parse colors', () => {
   });
 });
 
-describe('should not parse invalid SCSS', () => {
+describe('should not parse invalid or empty SCSS', () => {
   const samples = [
     '$bad: 123',
+    '...',
+    '',
   ];
-  samples.forEach(scss => it(`should not parse ${scss}`, () => expect(() => scssColors(scss)).to.throw()));
+  samples.forEach(scss => it(`should not parse ${scss}`, () => expect(scssColors(scss)).to.deep.equal({})));
 });
 
 describe('should not parse non-color variables', () => {
   const samples = [
     '$unknown: $unknowable;',
+    '$sz: $a * $b;',
+    '$sz: \'font 1\', Font',
     '$sz: 12em;',
     '$sz: 12em;',
   ];
