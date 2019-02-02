@@ -1,7 +1,7 @@
 {
   "name": "scss-colors",
   "version": "1.0.0",
-  "description": "List all colors defined as SCSS variables.",
+  "description": "Find all color variables defined within SCSS files.",
   "main": "index.js",
   "scripts": {
     "test": "npx mocha"
