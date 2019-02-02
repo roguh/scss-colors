@@ -1,0 +1,37 @@
+{
+  "name": "scss-colors",
+  "version": "1.0.0",
+  "description": "List all colors defined as SCSS variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roguh/scss-colors.git"
+  },
+  "author": "Hugo Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roguh/scss-colors/issues"
+  },
+  "homepage": "https://github.com/roguh/scss-colors#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coffeescript": "^2.3.2",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "local-repl": "^4.0.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "color-string": "^1.5.3",
+    "sast": "^0.7.0",
+    "syntax-tree": "^0.3.1",
+    "unist-util-find": "^1.0.1",
+    "unist-util-visit": "^1.4.0"
+  }
+}
