@@ -18,20 +18,21 @@
   "homepage": "https://github.com/roguh/scss-colors#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "coffeescript": "^2.3.2",
-    "eslint": "^5.13.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.0",
-    "eslint-plugin-react": "^7.12.4",
+    "coffeescript": "^2.4.1",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
     "local-repl": "^4.0.0",
-    "mocha": "^5.2.0"
+    "mocha": "^6.2.0"
   },
   "dependencies": {
     "color-string": "^1.5.3",
-    "sast": "^0.7.0",
+    "sast": "^0.8.1",
     "syntax-tree": "^0.3.1",
     "unist-util-find": "^1.0.1",
-    "unist-util-visit": "^1.4.0"
+    "unist-util-visit": "^2.0.0"
   }
 }
