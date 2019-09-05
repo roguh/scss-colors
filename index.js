@@ -3,7 +3,7 @@ const find = require('unist-util-find');
 const visit = require('unist-util-visit');
 const colorString = require('color-string');
 
-const is = type => node => node.type === type;
+const is = (type) => (node) => node.type === type;
 
 const scssColors = (scssString) => {
   const colors = {};

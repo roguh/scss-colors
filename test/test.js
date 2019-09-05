@@ -1,6 +1,6 @@
 /* global describe, it */
-const scssColors = require('..');
 const { expect } = require('chai');
+const scssColors = require('..');
 
 describe('parse colors', () => {
   it('should parse an SCSS variable set to a hex-value color', () => {
@@ -30,7 +30,7 @@ describe('should not parse invalid or empty SCSS', () => {
     '...',
     '',
   ];
-  samples.forEach(scss => it(`should not parse ${scss}`, () => expect(scssColors(scss)).to.deep.equal({})));
+  samples.forEach((scss) => it(`should not parse ${scss}`, () => expect(scssColors(scss)).to.deep.equal({})));
 });
 
 describe('should not parse non-color variables', () => {
@@ -41,5 +41,5 @@ describe('should not parse non-color variables', () => {
     '$sz: 12em;',
     '$sz: 12em;',
   ];
-  samples.forEach(scss => it(`should not parse ${scss}`, () => expect(scssColors(scss)).to.deep.equal({})));
+  samples.forEach((scss) => it(`should not parse ${scss}`, () => expect(scssColors(scss)).to.deep.equal({})));
 });
